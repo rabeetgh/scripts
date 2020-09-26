@@ -1,0 +1,20 @@
+ start CH3SH
+ geometry units angstroms
+   C       -0.04788    1.15151    0.00000
+   S       -0.04788   -0.66496    0.00000
+   H        1.28434   -0.82105    0.00000
+   H       -1.09471    1.45662    0.00000
+   H        0.43189    1.54737    0.89371
+   H        0.43189    1.54737   -0.89371
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

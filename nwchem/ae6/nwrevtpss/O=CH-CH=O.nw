@@ -1,0 +1,20 @@
+ start O=CH-CH=O
+ geometry units angstroms
+   C            .000000     .756430     .000000
+   C            .000000    -.756430     .000000
+   O           1.046090    1.389916     .000000
+   H           -.999940    1.228191     .000000
+   O          -1.046090   -1.389916     .000000
+   H            .999940   -1.228191     .000000
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

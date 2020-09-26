@@ -1,0 +1,20 @@
+ start CO2.xyz
+ geometry units angstroms noautoz noautosym
+   C          0.00000        0.00000        0.00000
+   O          0.00000        0.00000        1.15949
+   O          0.00000        0.00000       -1.15949
+ end
+stepper
+ maxiter 20
+end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft optimize

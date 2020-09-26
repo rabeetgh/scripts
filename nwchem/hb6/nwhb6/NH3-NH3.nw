@@ -1,0 +1,22 @@
+ start NH3-NH3
+ geometry units angstroms
+   N        1.57523    0.00009   -0.04261
+   H        2.13111    0.81395   -0.28661
+   H        1.49645   -0.00294    0.97026
+   H        2.13172   -0.81189   -0.29145
+   N       -1.68824    0.00008    0.10485
+   H       -2.12640   -0.81268   -0.31731
+   H       -2.12744    0.81184   -0.31816
+   H       -0.71430    0.00054   -0.19241
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

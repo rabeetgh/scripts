@@ -1,0 +1,17 @@
+ start PH2
+ geometry units angstroms noautosym
+   P          0.00000        0.00000       -0.11566
+   H          1.02013        0.00000        0.86743
+   H         -1.02013        0.00000        0.86743
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 2
+ end
+ task dft energy

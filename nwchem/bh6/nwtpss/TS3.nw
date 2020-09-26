@@ -1,0 +1,18 @@
+ start TS3
+ geometry units angstroms noautosym
+   H          1.26210       -0.22010        0.00000
+   S          0.00000        0.22315        0.00000
+   H         -0.50058       -1.11545        0.00000
+   H         -0.76152       -2.23491        0.00000
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 2
+ end
+ task dft energy

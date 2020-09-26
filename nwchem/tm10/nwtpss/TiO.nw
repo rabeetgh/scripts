@@ -1,0 +1,16 @@
+ start TiO
+ geometry units angstroms noautosym
+   Ti       0.00000    0.00000   -0.76697
+   O        0.00000    0.00000    2.29621
+ end
+ charge 0
+ basis 
+   * library def2-TZVPP
+ end
+dft
+   xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+   mult 3
+end
+ task dft energy

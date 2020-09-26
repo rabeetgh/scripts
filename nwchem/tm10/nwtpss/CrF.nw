@@ -1,0 +1,16 @@
+ start CrF
+ geometry units angstroms noautosym
+   Cr       0.00000    0.00000   -0.90337
+   F        0.00000    0.00000    2.47240
+ end
+ charge 0
+ basis 
+   * library def2-TZVPP
+ end
+dft
+   xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+   mult 6
+end
+ task dft energy

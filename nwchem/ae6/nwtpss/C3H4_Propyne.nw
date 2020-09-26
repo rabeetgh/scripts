@@ -1,0 +1,21 @@
+ start C3H4_Propyne
+ geometry units angstroms
+   C            .000000     .000000     .214947
+   C            .000000     .000000    1.433130
+   C            .000000     .000000   -1.246476
+   H            .000000     .000000    2.498887
+   H            .000000    1.021145   -1.636167
+   H            .884337    -.510572   -1.636167
+   H           -.884337    -.510572   -1.636167
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

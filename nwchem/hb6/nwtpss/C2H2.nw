@@ -1,0 +1,18 @@
+ start C2H2
+ geometry units angstroms
+   C        0.00000   -0.60420    0.00000
+   C        0.00000    0.60420    0.00000
+   H        0.00679   -1.67013    0.00000
+   H       -0.00684    1.67016   -0.00000
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

@@ -1,0 +1,17 @@
+ start H2S.xyz
+ geometry units angstroms
+   S        0.00000    0.00000    0.10214
+   H        0.00000    0.97427   -0.81708
+   H        0.00000   -0.97427   -0.81708
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

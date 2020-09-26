@@ -1,0 +1,19 @@
+ start NH4+.xyz
+ geometry units angstroms
+   N        0.00000    0.00000    0.00000
+   H        0.00000    0.00000    1.02853
+   H        0.96971    0.00000   -0.34284
+   H       -0.48485    0.83979   -0.34284
+   H       -0.48485   -0.83979   -0.34284
+ end
+ charge 1
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

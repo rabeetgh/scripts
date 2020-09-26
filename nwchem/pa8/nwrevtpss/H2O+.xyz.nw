@@ -1,0 +1,18 @@
+ start H2O+.xyz
+ geometry units angstroms
+   O        0.00000    0.00000    0.00000
+   H        0.00000    0.00000    0.99082
+   H        0.92237    0.00000   -0.36189
+   H       -0.53073    0.75438   -0.36189
+ end
+ charge 1
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

@@ -1,0 +1,18 @@
+ start CH3
+ geometry units angstroms noautosym
+   C          0.00000        0.00000        0.00000
+   H          0.00000        0.00000        1.07732
+   H          0.93298        0.00000       -0.53866
+   H         -0.93298        0.00000       -0.53866
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 2
+ end
+ task dft energy

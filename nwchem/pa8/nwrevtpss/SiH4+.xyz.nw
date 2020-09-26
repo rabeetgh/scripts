@@ -1,0 +1,20 @@
+ start SiH4+.xyz
+ geometry units angstroms
+   Si       0.00000    0.00000    0.00000
+   H        0.38054    0.00000    1.83136
+   H       -0.38038    0.00000    1.83048
+   H        0.02577   -1.45375   -0.16190
+   H       -1.27406    0.71377   -0.10782
+   H        1.24797    0.75810   -0.10956
+ end
+ charge 1
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy

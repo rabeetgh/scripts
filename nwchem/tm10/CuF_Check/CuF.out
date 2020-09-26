@@ -1,0 +1,228 @@
+ argument  1 = /home/kohn/work/DATASETS/NWCHEM/rabeet/tm10/nwtpss/CuF.nw
+  NWChem w/ OpenMP: maximum threads =  1
+                                         
+                                         
+ 
+ 
+              Northwest Computational Chemistry Package (NWChem) 6.8
+              ------------------------------------------------------
+ 
+ 
+                    Environmental Molecular Sciences Laboratory
+                       Pacific Northwest National Laboratory
+                                Richland, WA 99352
+ 
+                              Copyright (c) 1994-2017
+                       Pacific Northwest National Laboratory
+                            Battelle Memorial Institute
+ 
+             NWChem is an open-source computational chemistry package
+                        distributed under the terms of the
+                      Educational Community License (ECL) 2.0
+             A copy of the license is included with this distribution
+                              in the LICENSE.TXT file
+ 
+                                  ACKNOWLEDGMENT
+                                  --------------
+
+            This software and its documentation were developed at the
+            EMSL at Pacific Northwest National Laboratory, a multiprogram
+            national laboratory, operated for the U.S. Department of Energy
+            by Battelle under Contract Number DE-AC05-76RL01830. Support
+            for this work was provided by the Department of Energy Office
+            of Biological and Environmental Research, Office of Basic
+            Energy Sciences, and the Office of Advanced Scientific Computing.
+
+
+           Job information
+           ---------------
+
+    hostname        = kohn
+    program         = nwchem
+    date            = Wed Sep 26 22:46:50 2018
+
+    compiled        = Wed_Sep_26_21:04:37_2018
+    source          = /home/kohn/softwares/nwchem/nwchem-6.8
+    nwchem branch   = 6.8
+    nwchem revision = v6.8-47-gdf6c956
+    ga revision     = ga-5.6.3
+    use scalapack   = F
+    input           = /home/kohn/work/DATASETS/NWCHEM/rabeet/tm10/nwtpss/CuF.nw
+    prefix          = CuF.
+    data base       = ./CuF.db
+    status          = startup
+    nproc           =        4
+    time left       =     -1s
+
+
+
+           Memory information
+           ------------------
+
+    heap     =   13107196 doubles =    100.0 Mbytes
+    stack    =   13107201 doubles =    100.0 Mbytes
+    global   =   26214400 doubles =    200.0 Mbytes (distinct from heap & stack)
+    total    =   52428797 doubles =    400.0 Mbytes
+    verify   = yes
+    hardfail = no 
+
+
+           Directory information
+           ---------------------
+ 
+  0 permanent = .
+  0 scratch   = .
+ 
+ 
+ 
+ 
+                                NWChem Input Module
+                                -------------------
+ 
+ 
+
+ Scaling coordinates for geometry "geometry" by  1.889725989
+ (inverse scale =  0.529177249)
+
+ 
+ 
+                             Geometry "geometry" -> ""
+                             -------------------------
+ 
+ Output coordinates in angstroms (scale by  1.889725989 to convert to a.u.)
+ 
+  No.       Tag          Charge          X              Y              Z
+ ---- ---------------- ---------- -------------- -------------- --------------
+    1 F                    9.0000     0.00000000     0.00000000     0.00000000
+ 
+      Atomic Mass 
+      ----------- 
+ 
+      F                 18.998400
+ 
+
+ Effective nuclear repulsion energy (a.u.)       0.0000000000
+
+            Nuclear Dipole moment (a.u.) 
+            ----------------------------
+        X                 Y               Z
+ ---------------- ---------------- ----------------
+     0.0000000000     0.0000000000     0.0000000000
+ 
+ 
+            XYZ format geometry
+            -------------------
+     1
+ geometry
+ F                     0.00000000     0.00000000     0.00000000
+ 
+
+
+ Summary of "ao basis" -> "" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ *                         def2-TZVPP                 on all atoms 
+
+
+  dft_input: spin multiplicity value not found;
+  ignoring option using default of singlet
+ 
+                                 NWChem DFT Module
+                                 -----------------
+ 
+ 
+                      Basis "ao basis" -> "ao basis" (cartesian)
+                      -----
+  F (Fluorine)
+  ------------
+            Exponent  Coefficients 
+       -------------- ---------------------------------------------------------
+  1 S  3.54791004E+04  0.000215
+  1 S  5.31847290E+03  0.001670
+  1 S  1.21048110E+03  0.008673
+  1 S  3.42855181E+02  0.035050
+  1 S  1.12019432E+02  0.111653
+  1 S  4.07147402E+01  0.259885
+ 
+  2 S  1.60396781E+01  0.394230
+  2 S  6.50381867E+00  0.249982
+ 
+  3 S  1.54404775E+00  1.000000
+ 
+  4 S  6.12234529E-01  1.000000
+ 
+  5 S  2.40279797E-01  1.000000
+ 
+  6 P  8.02339005E+01  0.006369
+  6 P  1.85940107E+01  0.044303
+  6 P  5.68679027E+00  0.168672
+  6 P  1.95110063E+00  0.361663
+ 
+  7 P  6.69702113E-01  1.000000
+ 
+  8 P  2.16513004E-01  1.000000
+ 
+  9 D  3.10700000E+00  1.000000
+ 
+ 10 D  8.55000000E-01  1.000000
+ 
+ 11 F  1.91700000E+00  1.000000
+ 
+
+
+ Summary of "ao basis" -> "ao basis" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ F                         def2-TZVPP               11       36   5s3p2d1f
+
+
+
+
+ Summary of "ao basis" -> "ao basis" (cartesian)
+ ------------------------------------------------------------------------------
+       Tag                 Description            Shells   Functions and Types
+ ---------------- ------------------------------  ------  ---------------------
+ F                         def2-TZVPP               11       36   5s3p2d1f
+
+
+  Caching 1-el integrals 
+          Number of electrons:          9
+ ------------------------------------------------------------------------
+ Odd number of electrons. Please specify a restricted open-shell or open-shell calculation                   9
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+  current input line : 
+    15:  task dft energy
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+ There is an error in the input file
+ ------------------------------------------------------------------------
+ For more information see the NWChem manual at 
+ http://www.nwchem-sw.org/index.php/NWChem_Documentation
+
+
+ For further details see manual section: 
+                                                                                
+                                                                                
+                                                                                
+                   
+ Odd number of electrons. Please specify a restricted open-shell or open-shell calculation                   9
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+  current input line : 
+     0: 
+ ------------------------------------------------------------------------
+ ------------------------------------------------------------------------
+ There is an error in the input file
+ ------------------------------------------------------------------------
+ For more information see the NWChem manual at 
+ http://www.nwchem-sw.org/index.php/NWChem_Documentation
+
+
+ For further details see manual section: 
+                                                                                
+                                                                                
+                                                                                
+                   

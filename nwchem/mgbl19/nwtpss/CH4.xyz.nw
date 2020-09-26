@@ -1,0 +1,22 @@
+ start CH4.xyz
+ geometry units angstroms noautoz noautosym
+   C          0.00000        0.00000        0.00000
+   H          0.00000        0.00000        1.08947
+   H          1.02716        0.00000       -0.36316
+   H         -0.51358        0.88955       -0.36316
+   H         -0.51358       -0.88955       -0.36316
+ end
+stepper
+ maxiter 20
+end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft optimize

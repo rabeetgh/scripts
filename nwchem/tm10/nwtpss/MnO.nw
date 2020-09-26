@@ -1,0 +1,16 @@
+ start MnO
+ geometry units angstroms noautosym
+   Mn       0.00000    0.00000   -0.69435
+   O        0.00000    0.00000    2.38422
+ end
+ charge 0
+ basis 
+   * library def2-TZVPP
+ end
+dft
+   xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+   mult 6
+end
+ task dft energy

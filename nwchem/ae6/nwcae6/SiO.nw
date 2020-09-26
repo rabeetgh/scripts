@@ -1,0 +1,16 @@
+ start SiO
+ geometry units angstroms
+   Si  .000000  .000000   .560846
+   O   .000000  .000000  -.981480
+ end
+ charge 0
+ basis 
+   * library 6-311++G(3df,3pd)
+ end
+ dft
+xc xtpss03 ctpss03
+   decomp
+   maxiter 5000
+ mult 1
+ end
+ task dft energy
